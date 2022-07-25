@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font: 14px/1.5 Arial;
+    color: #666;
+    background: #efefef;
+}
+.layout {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#page {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+header {
+    background: #182e6c;
+    width: 100%;
+    text-align: center;
+    padding: 60px 0 10px 0;
+    color: #fff;
+}
+
+header>h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+header>p {
+    font-size: 14px;
+    color: #aaa;
+    margin: 0;
+}
+
+aside {
+    width: 340px;
+    border-right: 1px solid #ccc;
+    position: relative;
+    padding-top: 100px;
+}
+
+aside .avatar {
+    position: absolute;
+    top: -80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+aside .avatar .imgWrapper{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+}
+aside .avatar img {
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+section {
+    border-bottom:1px solid #ccc;
+    margin: 30px 20px 0 20px;
+    padding-bottom: 20px;
+}
+
+section h2 {
+    color: #5c99ca;
+    font-size: 16px;
+}
+
+section h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+section a {
+    color: #333;
+}
+
+
+.personal .item span:first-child {
+    display: inline-block;
+    width: 80px;
+}
+
+.personal .item span:last-child::before {
+    content: ':';
+    margin-right: 10px;
+}
+
+.skills .radarWrapper{
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills .item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.skills .item span em{
+    font-size: 17px;
+    color: #007688;
+}
+.skills .item span:first-child::after{
+    content: ':';
+    margin-left: 12px;
+}
+.contact .item {
+    display: flex;
+    align-items: center;
+}
+.contact svg {
+    width: 25px;
+    height: 25px;
+}
+
+.contact .item span {
+    margin-left: 10px;
+}
+
+main {
+    flex: 1;
+    min-height: calc(100vh - 162px);
+}
+
+main section .item ul li:first-child{
+
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-top: 20px;
+        padding-bottom: 90px;
+    }
+    aside {
+        width: 100%;
+        padding-top: 0px;
+    }
+    aside .avatar .imgWrapper{
+        width: 120px;
+        height: 120px;
+    }
+    aside .imgWrapper img{
+        width: 80px;
+        height: 120px;
+    }
+}
